@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>National Library of Norway - Web Archive</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -18,28 +18,17 @@
   </head>
   <body>
     <textarea id="source">
-
-class: center, middle
-
-# Title
-
----
-
-# Agenda
-
-1. Introduction
-2. Deep-dive
-3. ...
-
----
-
-# Introduction
-
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create();
+      let slideshow
+      fetch('https://nlnwa.github.io/nlnwa/slides/veidemann.md')
+        .then(response => response.text())
+        .then(text => {
+          document.getElementById('source').value = text;
+          slideshow = remark.create();      
+          })
     </script>
   </body>
 </html>
