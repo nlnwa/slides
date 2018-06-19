@@ -17,18 +17,9 @@
     </style>
   </head>
   <body>
-    <textarea id="source">
-    </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
-      let slideshow
-      fetch('https://nlnwa.github.io/nlnwa/slides/veidemann.md')
-        .then(response => response.text())
-        .then(text => {
-          document.getElementById('source').value = text;
-          slideshow = remark.create();      
-          })
+      let slideshow = remark.create({sourceUrl: 'veidemann.md'})
     </script>
   </body>
 </html>
