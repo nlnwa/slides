@@ -5,12 +5,8 @@ class: center, middle
 
 ---
 
-# Agenda
+# Schematic overview
 
-1. Introduction
-2. Deep-dive
-3. ...
-
----
-
-# Introduction
+.schematics[
+  ![schematic overview](harvester-components.png#useless "Schematic overview")
+]

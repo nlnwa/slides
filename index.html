@@ -14,12 +14,17 @@
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .schematics img{
+      width: 100%;
+      }
     </style>
   </head>
   <body>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
-      let slideshow = remark.create({sourceUrl: 'veidemann.md'})
+      let urlParams = new URLSearchParams(window.location.search)
+      let talk = urlParams.get('talk')
+      let slideshow = remark.create({sourceUrl: talk + '.md' })
     </script>
   </body>
 </html>
