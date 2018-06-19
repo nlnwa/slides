@@ -8,5 +8,5 @@ class: center, middle
 # Schematic overview
 
 .schematics[
-  ![schematic overview](harvester-components.png#useless "Schematic overview")
+  ![schematic overview](harvester-components.png "Schematic overview")
 ]
