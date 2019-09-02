@@ -1,0 +1,13 @@
+{
+  "name": "slides",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "description": "National library of Norway slides",
+  "main": "index.js",
+  "repository": "https://github.com/nlnwa/slides",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.8.1",
+    "koa-static": "^5.0.0"
+  }
+}
