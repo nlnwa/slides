@@ -24,7 +24,7 @@
     <script>
       let urlParams = new URLSearchParams(window.location.search)
       let talk = urlParams.get('talk')
-      let slideshow = remark.create({sourceUrl: 'slides/' + talk + '.md' })
+      let slideshow = remark.create({sourceUrl: 'slides/' + talk + '/' + talk + '.md' })
     </script>
   </body>
 </html>
