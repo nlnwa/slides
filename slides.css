@@ -1,0 +1,37 @@
+body { font-family: 'Droid Serif'; }
+h1, h2, h3 {
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
+}
+
+.gigantic {
+    font-size: 125px;
+}
+
+.huge {
+	  font-size: 100px;
+}
+
+.large {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.highlight-white {
+    padding: 1em;
+    display: inline-block;
+}
+
+.white {
+	  color: white;
+}
+
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+.max-width img{
+    width: 100%;
+}
+
+.schematics img{
+    width: 100%;
+}
